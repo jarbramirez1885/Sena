@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Contacto</title>
+<link href="site.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+<script type="text/javascript">
+	function confirm_send() 
+	{
+		return confirm("Está seguro de enviar los datos?");
+	}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+  <header>
+    <a href="index.html">
+		<img src="images/banner.jpg" alt="Rent AutoSecure" width="900" height="160" id="logo" style="background-color: #C6D580; display:block;" />
+	</a>
+  </header>
+  <div class="sidebar1">
+    <ul class="nav">
+        <li><a href="index.html">Menú</a></li>
+        <li><a href="index.html">Rent AutoSecure</a></li>
+        <li><a href="autos.html">Autos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        
+         <div class="dropdown">
+        	<button class="btn btn-success dropdown-toggle" type="button" id ="dropdownMenuBoton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Servicios
+            </button>
+        	<div class="dropdown-menu" aria-labelledby="dropdownMenuBoton">
+            	<a href="mantenimiento.html" class="dropdown-item">Mantenimiento</a>
+                <a href="montallantas.html" class="dropdown-item">Montallantas</a>
+                <a href="alineacionbalanceo.html" class="dropdown-item">Alineación y balanceo</a>
+        	</div>
+        </div>
+        
+    </ul>
+    
+  <!-- end .sidebar1 --></div>
+  <article class="content">
+  <div id="divContenedor">
+ 
+              <div id="divTitulo">Datos de Contacto</div>
+			  <div>
+             <form id="form1" name="form1" action="#" method="post">
+                 <label id="lbl1" name="lbl1" for="txt1">Nombre:</label>-
+                 <input id="txt1" name="txt1" type="text" value="Digita el nombre..." />
+ 
+                 <label id="lbl2" name="lbl2" for="txt2">Email:</label>
+                 <input id="txt2" name="txt2" type="text" value="Digita el email..." />
+				 
+				 <label id="lbl3" name="lbl3" for="txt3">Telefono:</label>
+                 <input id="txt3" name="txt3" type="text" value="Digita el telefono..." />
+ 
+                 <input type="button" id="btnSubmit" name="btnSubmit" value="Enviar Datos" onClick="return confirm_send()"/>
+				 
+             </form>			
+			 </div> 
+   </div>
+   			 <div id="divContenedor">
+			 <div>  
+				<label>Siguenos en:</label>
+				 <a href="https://twitter.com/?lang=es" target="_blank"><img src="images/redes/log_twitter.png" alt="twitter" width="50" height="50" id="twitter" /></a>
+				 <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img src="images/redes/logo_instagram.png" alt="instagram" width="50" height="50" id="instagram" /></a>
+				 <a href="https://es-la.facebook.com/" target="_blank"><img src="images/redes/logo_facebook.png" alt="Facebook" width="50" height="50" id="facebook" /></a>
+			</div>
+			 </div>
+  <!-- end .content -->
+  </article>
+ 
+
+  <!-- end .container -->
+  </div>
+<script type="text/javascript" src="bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
